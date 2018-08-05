@@ -47,6 +47,14 @@ public class FirstLambdaExpression {
 		 * writable
 		 * 
 		 */
+
+		/**
+		 * Note: 1) Lambda expression is of type functional interface(interfaces
+		 * with only one abstract method). 2) Lambda expressions can be put in a
+		 * variable. 3) Lambda expression is not an object as it doesn't use the
+		 * new operator as in case of anonymous classes but it is recorded in
+		 * JVM as an object without its own identity.
+		 */
 		System.out.println("Using Lambda expressions");
 		FileFilter filterLambda = (File file) -> {
 			return file.getName().endsWith(".java");
