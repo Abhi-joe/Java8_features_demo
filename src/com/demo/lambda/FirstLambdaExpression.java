@@ -9,7 +9,7 @@ import java.io.FileFilter;
  * @author Abhi
  *
  */
-public class FirstLambdaExpression {
+public class FirstLambdaExpression{
 
 	/**
 	 * @param args
@@ -72,6 +72,8 @@ public class FirstLambdaExpression {
 		} else {
 			System.out.println("No files found");
 		}
+		
+		IDemoInterface demo = (a,b)->a+b;
+		System.out.println(demo);
 	}
-
 }
